@@ -41,6 +41,12 @@ docker-compose up -d
 ## Data Persistence
 All n8n data is stored in the `n8n_data` Docker volume and will persist across container restarts.
 
+## Configuration Notes
+- **Telemetry disabled** (`N8N_DIAGNOSTICS_ENABLED=false`) to prevent connection errors
+- **UI login disabled** for easier development access
+- **TLS verification disabled** for local HTTPS testing
+- **Both community packages loaded**: Jira Data Center + Bitbucket Data Center
+
 ## Setup Instructions
 
 1. **Copy this template:**
